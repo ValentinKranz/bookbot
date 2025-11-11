@@ -1,3 +1,5 @@
+from stats import get_num_words
+
 #main function
 def main():
     book_path = "/home/valentinkranz/workspace/github.com/bootdev/bookbot/books/frankenstein.txt"
@@ -12,12 +14,5 @@ def get_book_text(file_path):
     with open(file_path) as file:
         # Read the content of the file
         return file.read()
-        
-
-#Function to count words in file
-def get_num_words(text):
-    words = text.split()
-    return len(words)
-
 
 main()  
